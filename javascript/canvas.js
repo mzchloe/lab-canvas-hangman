@@ -35,7 +35,14 @@ class HangmanCanvas {
   }
 
   writeWrongLetter(letter, errorsLeft) {
-    // ... your code goes here
+    this.context.font ='Helvetia'
+    this.context.fillStyle = 'black'
+    if (!this.secretWord(letter) && errorsLeft >= 0){
+      this.context.fillText(
+        
+      )
+      
+    }
   }
 
   drawHangman(errorsLeft) {
